@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Company Profile</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">MyCompany</a>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#profile" class="nav-link">Our Profile</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#message" class="nav-link">Message Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">Hi, <span id="userName" class="highlight">Guest</span> <span class="wave">!!</span></h1>
+      <p class="hero-subtitle">Welcome to our official company profile website</p>
+    </div>
+  </section>
+
+  <section id="profile" class="section profile-section">
+    <div class="container">
+      <h2 class="section-title">Our Profile</h2>
+      <div class="profile-grid">
+        <div class="profile-card about-card">
+          <h3>About Us</h3>
+          <p>
+            We are a technology-driven company focused on building modern,
+            scalable, and user-friendly web applications that drive business growth.
+          </p>
+        </div>
+        <div class="profile-card vision-card">
+          <h3>Vision</h3>
+          <p>To become a global leader in digital innovation and software solutions.</p>
+        </div>
+        <div class="profile-card mission-card">
+          <h3>Mission</h3>
+          <ul>
+            <li>Deliver high-quality software solutions</li>
+            <li>Prioritize user experience and accessibility</li>
+            <li>Foster a culture of continuous innovation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="headquarters" class="section hq-section">
+    <div class="container">
+      <h2 class="section-title">Our Headquarters</h2>
+      <div class="hq-grid">
+        <div class="hq-item">
+          <div class="circle-icon">JKT</div>
+          <p>Jakarta</p>
+        </div>
+        <div class="hq-item">
+          <div class="circle-icon">BDG</div>
+          <p>Bandung</p>
+        </div>
+        <div class="hq-item">
+          <div class="circle-icon">SBY</div>
+          <p>Surabaya</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="message" class="section message-section">
+    <div class="container">
+      <h2 class="section-title">Message Us</h2>
+      <div class="message-content">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="John Doe" />
+          </div>
+
+          <div class="form-group">
+            <label for="birthday">Date of Birth</label>
+            <input type="date" id="birthday" />
+          </div>
+
+          <div class="form-group">
+            <label>Gender</label>
+            <div class="radio-group">
+              <label><input type="radio" name="gender" value="Male" checked> Male</label>
+              <label><input type="radio" name="gender" value="Female"> Female</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="john@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="+62 812..." />
+          </div>
+
+          <div class="form-group">
+            <label for="messageText">Message</label>
+            <textarea id="messageText" rows="4" placeholder="Your message here..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Submit</button>
+        </form>
+
+        <div id="result" class="result-box hidden">
+          <h3>Current Data</h3>
+          <div id="resultContent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 MyCompany. Created by Reyhan Zidany Jovianto.</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
